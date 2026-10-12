@@ -1,0 +1,42 @@
+しらす式　動く作戦図 — GitHub Pages公開手順
+
+【最初に】
+ZIPを解凍し、中にあるファイルをアップロードします。ZIPそのものはアップロードしません。
+既存の別アプリと混ざらないよう、この作戦図用の新しいリポジトリを作ってください。
+
+【公開手順】
+1. GitHubにログインし、「＋」→「New repository」を選ぶ。
+2. Repository nameに shirasu-sakusen と入力。Publicを選択し、Add a READMEをオンにしてCreate repository。
+3. Add file → Upload filesを選び、解凍したZIP内のファイルをすべてアップロード。
+   index.html、app.js、castle.js、annotation.js、map.jpg、sample.mp4は同じ階層に置く。
+   フォルダごと入れず、リポジトリの一番上にindex.htmlがある状態にする。
+4. Commit changesで保存する。
+5. Settings → Pages → Build and deploymentのSourceをDeploy from a branchにする。
+6. Branchをmain、フォルダを/(root)にしてSave。
+7. 公開が完了するとPages画面に表示されるVisit siteのリンクを開く。
+   一般的なURL： https://＜GitHubユーザー名＞.github.io/shirasu-sakusen/
+
+【使い方】
+砦／城を選択 → スクショを選択 → 部隊数を選択 → 各部隊のルートを指で描く。
+各部隊は最大3ルート。ルートごとに攻撃／防衛、人数、出発待ち・途中待機を設定できます。
+自由線：色と太さを選び、指でなぞる。
+文字：入力して地図をタップ。
+井闌車：城モードで配置し、真上の線だけを表示。再生中も動きません。
+再生速度は初期1倍速。必要に応じて4倍速などへ切り替えられます。
+作戦保存はJSON、画像保存はPNG。保存したJSONは作戦読込で再編集できます。
+動画保存の対応・形式は端末によって異なります。非対応なら画面収録を使ってください。
+作戦と選んだスクショはブラウザ内で処理され、サーバーへの共有機能はありません。
+
+【更新する場合】
+同じリポジトリに新しい同名ファイルをアップロードしてCommit changes。
+公開反映後、ページを再読み込みしてください。
+
+【うまく表示されない場合】
+・index.htmlが/(root)にあるか確認。
+・4つのHTML/JavaScriptファイルと画像を同じ場所に置いているか確認。
+・ZIPのままアップロードしていないか確認。
+・GitHub Pagesの公開結果をSettings → Pagesで確認。
+
+iPhone実機での操作・録画は未検証です。
+公式手順：
+https://docs.github.com/ja/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
