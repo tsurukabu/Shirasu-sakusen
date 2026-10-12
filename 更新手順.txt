@@ -1,0 +1,5 @@
+砦モードに「総大将を置く」ボタンを追加しました。
+ZIPを解凍し、GitHubの既存Shirasu-sakusenリポジトリでAdd file → Upload files。
+最低限index.htmlとcastle.jsの2ファイルを同じ名前で上書きし、Commit changesを押してください。
+公開反映後に作戦図を再読み込みしてください。
+他のファイルも最新版を同梱しています。
